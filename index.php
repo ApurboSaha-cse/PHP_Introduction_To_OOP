@@ -7,13 +7,15 @@ $book3 = new Book(9785267006323, "One Hundred Years Of Solitude", "Gabriel Garci
 $customer1 = new Customer(76136, "Apurbo", "Saha", "apurbosaha.cse@gmail.com");
 $customer2 = new Customer(76198, 'Mary', 'Curry', 'someone@mail.com');
 
-
+echo "Book Details..........<br>";
 echo $book1 ->__toString(),"</br>";
 echo $book2 ->__toString(),"</br>";
 echo $book3 ->__toString(),"</br>";
-
+$book2 ->setAuthor("Harper Lee");
+echo $book2 ->__toString(),"</ br>";
 echo $book1 ->title,"<br>";
 
+echo "<br>Customer Details..........<br>";
 echo $customer1 ->__toString(),"</br>";
 echo $customer2 ->__toString(),"</br>";
 
